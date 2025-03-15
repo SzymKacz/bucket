@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomoc</title>
+    <style>
+	.main-content {
+    flex: 0;
+    padding: 0px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    text-align: center;
+    min-height: 10vh; 
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 3px 10px #000;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background-image: url('logo720.png');
+    background-size: cover;
+    border-radius: 50%;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.layout {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 20%;
+    max-width: 250px;
+    background-color: #333;
+    padding: 20px;
+    box-shadow: 2px 0px 10px #000;
+    border-radius: 0 10px 10px 0;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #444;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    color: #aaa;
+    box-shadow: 0px -3px 10px #000;
+}
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo"></div>
+    <nav>
+         <a href="lorenest1.html">Home</a> 
+        <a href="notifications.html">Notifications</a>
+        <a href="messages.html">Messages</a>
+    </nav>
+</header>
+
+<div class="layout">
+    <div class="sidebar">
+        <a href="profile.html">Profile</a>
+        <a href="settings.html">Settings</a>
+        <p><a href="logout.php">Wyloguj</a></p>
+    </div>
+    <div class="main-content">
+        <h1>Pomoc</h1>
+
+    </div>
+    <div class="sidebar">
+        <a href="help.html">Pomoc</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="rules.html">Regulamin</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 LoreNest. Wszelkie prawa zastrzeżone.</p>
+</footer>
+</body>
+</html>
